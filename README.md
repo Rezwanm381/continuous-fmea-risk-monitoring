@@ -12,7 +12,7 @@ The portfolio version is a deliberate rebuild of earlier graduate coursework. Du
 
 The historical implementation created an RPN-like score from vibration, temperature, and current threshold flags plus noise, then used those same sensor variables to predict the score. Favorable fit therefore measured recovery of a visible scoring recipe rather than prediction of an independent future outcome. It also used a random row split instead of asset-separated temporal evidence.
 
-The historical artifacts remain preserved as private coursework provenance under `HISTORICAL_INVALIDATED_APPROACH`, but their predictive scores are not reused. The rebuilt project instead predicts a separate future degradation-event label, preserves the official asset split, and constructs every predictor from information available at or before the prediction cycle. The detailed historical audit remains outside the public allowlist.
+The historical artifacts remain preserved as private coursework provenance under `HISTORICAL_INVALIDATED_APPROACH`, but their predictive scores are not reused. The rebuilt project instead predicts a separate future degradation-event label, preserves the official asset split, and constructs every predictor from information available at or before the prediction cycle. The detailed historical audit remains outside this repository.
 
 ## Dataset and data rights
 
@@ -29,7 +29,7 @@ This is simulated benchmark data, not field maintenance data.
 `DATA_PROVENANCE = PUBLIC_VERIFIED`  
 `REDISTRIBUTION_STATUS = VERIFY_BEFORE_PUBLICATION`
 
-NASA provides public access but its dataset record does not specify a redistribution license. Raw files are therefore kept in a private runtime cache outside this source candidate. Row- and asset-level NASA-derived outputs also remain outside the public candidate pending Module 8 review. Acquisition, expected filenames, hashes, and preparation steps are documented in [data/README.md](data/README.md) and [data_rights.md](docs/data_rights.md).
+NASA provides public access but its dataset record does not specify a redistribution license. Raw files are therefore kept in a private runtime cache outside this repository. Row- and asset-level NASA-derived outputs also remain outside the repository pending rights review. Acquisition, expected filenames, hashes, and preparation steps are documented in [data/README.md](data/README.md) and [data_rights.md](docs/data_rights.md).
 
 ## Prediction task
 
@@ -167,11 +167,11 @@ The progression shows predictive signal beyond simple engine age within grouped 
 - The FMEA mapping, S/O/D values, actions, and condition bands are illustrative assumptions.
 - The static comparison is not operationally workload-matched.
 - There is no field/domain deployment validation, maintenance-cost model, causal effect, avoided-failure estimate, cybersecurity assessment, safety certification, or standards-compliance claim.
-- Raw and row-level NASA-derived data remain excluded pending rights and final Module 8B review.
+- Raw and row-level NASA-derived data remain excluded pending rights review.
 
-Five NASA-data-derived figures are retained locally but withheld from the interim public allowlist pending derivative-rights review: target horizon, precision–recall, representative asset/lead time, condition-informed FMEA, and feature importance. The data-independent validation/leakage schematic above is the only figure approved by Module 8A.
+Five NASA-data-derived figures are retained locally but withheld from this repository pending derivative-rights review: target horizon, precision–recall, representative asset/lead time, condition-informed FMEA, and feature importance. The data-independent validation/leakage schematic above is the only included figure.
 
-The full limitation register is [limitations.md](reports/limitations.md), and the internal reproduction-audit summary is [validation_summary.md](reports/validation_summary.md).
+The full limitation register is [limitations.md](reports/limitations.md), and the reproduction-audit summary is [validation_summary.md](reports/validation_summary.md).
 
 ## Reproducibility
 
@@ -201,7 +201,7 @@ Randomness is fixed at seed `20260824`; seeds are not searched. Exact environmen
 - `docs/` — target, leakage, background, data-rights, claims, and reproducibility controls.
 - `reports/` — validated technical results and limitations.
 - `data/` — acquisition instructions only; no bundled raw dataset.
-- `../05_OUTPUTS/` — internal runtime, generated, validation, and private-cache material outside the source candidate.
+- `../05_OUTPUTS/` — local runtime, generated, validation, and private-cache material outside the repository.
 
 ## Provenance
 
@@ -211,8 +211,6 @@ The project is an expanded portfolio implementation derived from graduate course
 
 FMEA · condition monitoring · predictive-maintenance analytics · grouped validation · temporal leakage control · probability calibration · event-level evaluation · Logistic Regression · Random Forest · scikit-learn · Python · technical validation · risk communication
 
-## Current status
+## Rights and usage
 
-`PROFESSIONALIZED` with `INTERIM_PUBLICATION_STATUS = APPROVED_AFTER_MODULE_8A_EDITS_PENDING_MODULE_8B`
-
-Module 8A approval is interim and does not authorize publication. NASA redistribution, held derivative artifacts, attribution, licensing, final public-package composition, and the five-project decision remain for Module 8B.
+This repository is public for portfolio review. NASA redistribution, held derivative artifacts, attribution, and licensing remain subject to the boundaries documented in [LICENSE_STATUS.md](LICENSE_STATUS.md) and [data_rights.md](docs/data_rights.md). No public license has been assigned.
