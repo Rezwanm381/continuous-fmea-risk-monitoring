@@ -1,0 +1,35 @@
+# NASA metadata lists no explicit license; never include raw or processed records.
+data/raw/**
+data/external/**
+data/processed/**
+
+# Local analysis/runtime material.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.matplotlib/
+.analysis_env/
+.venv/
+.validation_tmp/
+.ipynb_checkpoints/
+.coverage
+htmlcov/
+*.tmp
+*.bak
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Generated analytical outputs live outside the eventual public source package.
+../05_OUTPUTS/.analysis_env/
+
+venv/
+.env
+.env.*
+.private_outputs/
+private_data_cache/

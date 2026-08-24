@@ -1,0 +1,22 @@
+# Limitations
+
+- C-MAPSS FD001 is a simulated degradation benchmark, not field maintenance data.
+- Terminal-window labels, correlated sequential rows, age/degradation structure, and 75 all-negative released test histories can inflate apparent discrimination relative to a production failure task; ROC-AUC is not accuracy.
+- All classic FD001 engines eventually reach simulated end of useful life; reported probabilities are conditional on this benchmark sampling design and 30-cycle horizon, not production-fleet base rates.
+- Only 25 official-test trajectories contain released observations inside the 30-cycle event window; event-warning coverage and lead-time estimates therefore have a small effective event sample.
+- The reported 16/25 coverage is conditional on unequal released follow-up inside the window; eligible assets truncated closer to the event contribute more opportunities to warn.
+- The FMEA failure-mode wording, S/O/D ratings, actions, and alert bands are `ENGINEERING_SCENARIO_ASSUMPTION` values pending aerospace/domain review.
+- The dataset documents one HPC degradation mode but anonymizes sensor meanings; model importance is associative and cannot prove a physical cause or validate a specific FMEA submode.
+- The maintenance decision rule is a transparent demonstration. It is not an optimized cost policy, work-order system, or autonomous control.
+- No maintenance cost, avoided downtime, prevented failure, safety improvement, or causal benefit is modeled.
+- Calibration is internal to FD001. Shift in equipment, sensors, operating regimes, prevalence, maintenance practice, or censoring would require new validation and likely recalibration.
+- The warning threshold is a scenario policy selected on grouped development predictions for a recall target. It is not a universal alarm limit.
+- The development 80% row-recall threshold achieved only 50.9% row recall on the truncated official test, so threshold transport is uncertain even within FD001.
+- The static comparison nearly matches development alert-state rows only. It does not match alert episodes, assets reached, inspections, interventions, or operating cost and therefore is not an operational workload-equivalence study.
+- Small differences between candidate models should be read as "best-performing within the evaluated setup," not proof of general superiority.
+- Asset-level bootstrap intervals quantify sampling variability within this benchmark but not domain-transfer uncertainty.
+- The official test is used in a retrospective portfolio reconstruction, not a preregistered experiment. Specifications are frozen before final predictive inspection, and final access is logged, but the project cannot claim prospective study governance.
+- Raw-data redistribution is not cleared: NASA makes the archive publicly accessible but lists no license. Raw files must not be included in a future public package until terms are verified.
+- Row- and asset-level NASA-derived outputs remain excluded from the source candidate pending Module 8; aggregate tables and figures still require artifact-by-artifact review.
+- No deployment, streaming ingestion, online learning, drift service, SCADA/IIoT/CMMS integration, cybersecurity assessment, safety certification, or standards compliance is implemented.
+- Machine learning supplements engineering review; it does not replace FMEA judgment or modify Severity/Occurrence/Detection automatically.
